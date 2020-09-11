@@ -8,4 +8,7 @@
     <color name="colorDelimiter">#D7D8D9</color>
     <color name="colorButton">#4986CC</color>
     <color name="colorRegularText">#818C99</color>
+    <color name="colorSubheadText">#6D7885</color>
+    <color name="colorLightBackground">#F5F5F5</color>
+    <color name="colorLightBorder">#E9E9E9</color>
 </resources>

@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".screens.donationtype.DonationTypeFragment">
 
     <RelativeLayout
@@ -12,12 +13,14 @@
         android:layout_height="55dp">
 
         <ImageButton
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:id="@+id/button_back_dt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
             android:contentDescription="@string/back"
+            android:layout_marginStart="-30dp"
             android:src="@drawable/ic_arrow_back" />
 
         <TextView
@@ -33,5 +36,101 @@
         android:layout_height="1px"
         android:layout_marginHorizontal="15dp"
         android:background="@color/colorDelimiter" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/button_targeted"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/grey_rect_with_round_courners_and_dark_borders"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_back" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Целевой сбор"
+                        android:textAlignment="textStart"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Когда есть определенная цель"
+                        android:textColor="@color/colorSubheadText" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_back" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button_regular"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/grey_rect_with_round_courners_and_dark_borders"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_back" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Регулярный сбор"
+                        android:textAlignment="textStart"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Если помощь нужна ежемесячно"
+                        android:textColor="@color/colorSubheadText" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_back" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
 
 </LinearLayout>
