@@ -9,5 +9,18 @@
         android:name="kz.nan.vkvezdekod.screens.start.StartFragment"
         android:label="fragment_start"
         tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/action_start_to_donation_type"
+            app:destination="@id/donation_type_destination"
+            app:enterAnim="@anim/slide_right"
+            app:exitAnim="@anim/slide_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_right"
+            app:popExitAnim="@anim/slide_left" />
     </fragment>
+    <fragment
+        android:id="@+id/donation_type_destination"
+        android:name="kz.nan.vkvezdekod.screens.donationtype.DonationTypeFragment"
+        android:label="fragment_donation_type"
+        tools:layout="@layout/fragment_donation_type" />
 </navigation>
