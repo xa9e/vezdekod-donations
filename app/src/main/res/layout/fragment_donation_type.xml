@@ -60,27 +60,34 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_arrow_back" />
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="10dp">
+                    android:layout_height="match_parent">
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Целевой сбор"
-                        android:textAlignment="textStart"
-                        android:textColor="#000"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical"
+                        android:padding="10dp">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Когда есть определенная цель"
-                        android:textColor="@color/colorSubheadText" />
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Целевой сбор"
+                            android:textAlignment="textStart"
+                            android:textColor="#000"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Когда есть определенная цель"
+                            android:textColor="@color/colorSubheadText" />
+                    </LinearLayout>
+                </RelativeLayout>
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -102,27 +109,34 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_arrow_back" />
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="10dp">
+                    android:layout_height="match_parent">
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Регулярный сбор"
-                        android:textAlignment="textStart"
-                        android:textColor="#000"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical"
+                        android:padding="10dp">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Если помощь нужна ежемесячно"
-                        android:textColor="@color/colorSubheadText" />
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Регулярный сбор"
+                            android:textAlignment="textStart"
+                            android:textColor="#000"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Если помощь нужна ежемесячно"
+                            android:textColor="@color/colorSubheadText" />
+                    </LinearLayout>
+                </RelativeLayout>
 
                 <ImageView
                     android:layout_width="wrap_content"
