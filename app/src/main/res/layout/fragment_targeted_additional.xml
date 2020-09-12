@@ -80,45 +80,26 @@
                     android:orientation="vertical"
                     android:layout_height="match_parent">
 
-                    <LinearLayout
+                    <RadioGroup
+                        android:id="@+id/radio_group_1"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="11dp"
-                        android:orientation="horizontal">
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
-                        <ImageView
+                        <RadioButton
+                            android:id="@+id/radio_as_reached"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:checked="true"
+                            android:text="Когда соберем сумму" />
+
+                        <RadioButton
+                            android:id="@+id/radio_until_date"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:src="@drawable/ic_disabled"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:paddingLeft="13dp"
-                            android:textSize="16dp"
-                            android:text="Когда соберем сумму"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="11dp"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:src="@drawable/ic_selected"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:textSize="16dp"
-                            android:layout_height="match_parent"
-                            android:paddingLeft="13dp"
-                            android:text="В определённую дату"/>
-                    </LinearLayout>
+                            android:checked="false"
+                            android:text="В определенную дату" />
+                    </RadioGroup>
 
                 </LinearLayout>
 
@@ -135,6 +116,10 @@
                     android:text="Дата окончания"/>
 
                 <LinearLayout
+                    android:id="@+id/data_picker_ll"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="invisible"
                     android:layout_width="match_parent"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/grey_rect_with_round_courners_and_dark_borders"
@@ -142,6 +127,7 @@
                     android:layout_height="match_parent">
 
                     <TextView
+                        android:id="@+id/date_text_view"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:padding="12dp"

@@ -89,5 +89,33 @@
         android:id="@+id/posting_destination"
         android:name="kz.nan.vkvezdekod.screens.posting.PostingFragment"
         android:label="fragement_posting"
-        tools:layout="@layout/fragment_posting" />
+        tools:layout="@layout/fragment_posting">
+        <argument
+            android:name="name_for_donation_edt1"
+            android:defaultValue="Добряши"
+            app:argType="string" />
+        <argument
+            android:name="sum_rubles_edt2"
+            android:defaultValue="10000"
+            app:argType="integer" />
+        <argument
+            android:name="goal_edt3"
+            android:defaultValue="Уход за животными"
+            app:argType="string" />
+        <argument
+            android:name="desc_edt4"
+            android:defaultValue="Привет-привет!"
+            app:argType="string" />
+        <argument
+            android:name="cc_edt5"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="imageUri"
+            app:argType="android.net.Uri" />
+        <argument
+            android:name="checkedFirstRadio"
+            android:defaultValue="true"
+            app:argType="boolean" />
+    </fragment>
 </navigation>
