@@ -58,7 +58,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingVertical="12dp">
+                android:paddingTop="12dp">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -72,14 +72,56 @@
                     android:layout_marginTop="8dp"
                     android:hint="Название сбора"
                     android:textSize="16dp"
-                    android:background="@drawable/edit_text_border"/>
+                    android:background="@drawable/grey_rect_with_round_courners_and_dark_borders"/>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingVertical="12dp">
+                android:paddingTop="12dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Сумма, ₽"/>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="Сколько нужно собрать?"
+                    android:textSize="16dp"
+                    android:background="@drawable/grey_rect_with_round_courners_and_dark_borders"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="12dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Цель"/>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:layout_marginTop="8dp"
+                    android:hint=""
+                    android:textSize="16dp"
+                    android:background="@drawable/grey_rect_with_round_courners_and_dark_borders"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="12dp">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -93,27 +135,70 @@
                     android:layout_marginTop="8dp"
                     android:hint="На что пойдут деньги и как они кому-то помогут?"
                     android:textSize="16dp"
-                    android:background="@drawable/edit_text_border" />
+                    android:background="@drawable/grey_rect_with_round_courners_and_dark_borders" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="12dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Куда получать деньги"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/grey_rect_with_round_courners_and_dark_borders"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:textColor="#000"
+                        android:text="Счёт VK Pay · 1234"
+                        android:textSize="16dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="end">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:paddingRight="10dp"
+                            android:src="@drawable/ic_gray_arrow_down"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
             </LinearLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:padding="15dp">
+                android:paddingVertical="15dp">
 
                 <FrameLayout
                     android:id="@+id/button_next_tf"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
                     android:layout_centerInParent="true"
                     android:background="@drawable/button_round_corners">
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:paddingHorizontal="16dp"
                         android:paddingVertical="7dp"
+                        android:gravity="center"
                         android:text="Далее"
                         android:textAlignment="center"
                         android:textColor="#FFFFFF" />
