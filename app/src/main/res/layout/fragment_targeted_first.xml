@@ -18,7 +18,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="asdf\n\n\n\n\n\n\n\n\n\n\nsadfasdfasdfasdf\n\n\n\adfsdfsdfasdfasdf\n\n\asdfasdf\n\n\asdfasdf\n\nasdfasdf\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nsdfsdfsdfsdfsfsdfssdf\n\n\n\n\n\nsdfs" />
+            android:text="asdf\n\n\n\n\n\n\n\n\n\n\nsadfasdfasdfasdf\n\n\n\adfsdfsdfasdfasdf\n\n\asdfasdf\n\n\asdfasdf\n\nasdfasdf\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nsdfsdfsdfsdfsfsdfssdf\n\n\n\n\n\nsdfss" />
 
 
     </ScrollView>
