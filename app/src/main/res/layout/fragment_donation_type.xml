@@ -24,20 +24,20 @@
 
             <LinearLayout
                 android:id="@+id/button_targeted"
-                android:clickable="true"
-                android:focusable="true"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:layout_marginVertical="5dp"
                 android:background="@drawable/grey_rect_with_round_courners_and_dark_borders"
+                android:clickable="true"
+                android:focusable="true"
                 android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_aim"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginHorizontal="14dp"/>
+                    android:layout_marginHorizontal="14dp"
+                    android:src="@drawable/ic_aim" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -48,8 +48,8 @@
                         android:layout_height="match_parent"
                         android:layout_centerInParent="true"
                         android:layout_centerVertical="true"
-                        android:orientation="vertical"
-                        android:gravity="center_vertical">
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -68,32 +68,32 @@
                     </LinearLayout>
                 </RelativeLayout>
 
-                    <ImageView
-                        android:layout_width="68dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="14dp"
-                        android:layout_marginRight="14dp"
-                        android:src="@drawable/ic_gray_arrow_right" />
+                <ImageView
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:src="@drawable/ic_gray_arrow_right" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/button_regular"
-                android:clickable="true"
-                android:focusable="true"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:layout_marginVertical="5dp"
                 android:background="@drawable/grey_rect_with_round_courners_and_dark_borders"
+                android:clickable="true"
+                android:focusable="true"
                 android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_calendar"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="14dp"
-                    android:layout_marginRight="14dp"/>
+                    android:layout_marginRight="14dp"
+                    android:src="@drawable/ic_calendar" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -104,8 +104,8 @@
                         android:layout_height="match_parent"
                         android:layout_centerInParent="true"
                         android:layout_centerVertical="true"
-                        android:orientation="vertical"
-                        android:gravity="center_vertical">
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="match_parent"
