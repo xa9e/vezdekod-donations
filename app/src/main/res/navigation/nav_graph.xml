@@ -22,5 +22,19 @@
         android:id="@+id/donation_type_destination"
         android:name="kz.nan.vkvezdekod.screens.donationtype.DonationTypeFragment"
         android:label="fragment_donation_type"
-        tools:layout="@layout/fragment_donation_type" />
+        tools:layout="@layout/fragment_donation_type">
+        <action
+            android:id="@+id/action_donation_type_to_targeted_first"
+            app:destination="@id/targeted_first_destination"
+            app:enterAnim="@anim/slide_right"
+            app:exitAnim="@anim/slide_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_right"
+            app:popExitAnim="@anim/slide_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/targeted_first_destination"
+        android:name="kz.nan.vkvezdekod.screens.targered.first.TargetedFirstFragment"
+        android:label="fragment_targeted_first"
+        tools:layout="@layout/fragment_targeted_first" />
 </navigation>
