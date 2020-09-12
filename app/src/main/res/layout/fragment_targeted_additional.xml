@@ -12,5 +12,185 @@
 
     <include layout="@layout/titlebar_separator" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="12dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Автор"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/grey_rect_with_round_courners_and_dark_borders"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:textColor="#000"
+                        android:text="Создатель ручек"
+                        android:textSize="16dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="end">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:paddingRight="10dp"
+                            android:src="@drawable/ic_gray_arrow_down"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="12dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Сбор завершится"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="11dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_disabled"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="13dp"
+                            android:textSize="16dp"
+                            android:text="Когда соберем сумму"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="11dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_selected"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textSize="16dp"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="13dp"
+                            android:text="В определённую дату"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="12dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Дата окончания"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/grey_rect_with_round_courners_and_dark_borders"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:textColor="#818C99"
+                        android:text="Выберите дату"
+                        android:textSize="16dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="end">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:paddingRight="10dp"
+                            android:src="@drawable/ic_gray_arrow_down"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingVertical="15dp">
+
+                <FrameLayout
+                    android:id="@+id/button_next_tf"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button_round_corners">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingHorizontal="16dp"
+                        android:paddingVertical="7dp"
+                        android:gravity="center"
+                        android:text="Далее"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF" />
+                </FrameLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
