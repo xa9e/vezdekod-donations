@@ -4,9 +4,10 @@
 
     <stroke
         android:color="@color/colorRectShortLines"
-        android:dashWidth="5dp"
-        android:dashGap="5dp" />
+        android:width="2dp"
+        android:dashWidth="8dp"
+        android:dashGap="4dp" />
     <solid android:color="@android:color/transparent" />
-    <corners android:radius="30dp" />
+    <corners android:radius="20dp" />
 
 </shape>
