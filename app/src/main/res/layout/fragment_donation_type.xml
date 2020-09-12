@@ -84,7 +84,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Когда есть определенная цель"
+                            android:text="Когда есть определённая цель"
                             android:textColor="@color/colorSubheadText" />
                     </LinearLayout>
                 </RelativeLayout>
