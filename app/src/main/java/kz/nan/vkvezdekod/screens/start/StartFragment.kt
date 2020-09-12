@@ -8,6 +8,7 @@ import android.widget.FrameLayout
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import kz.nan.vkvezdekod.R
+import kz.nan.vkvezdekod.uitools.setUpTitleBar
 
 class StartFragment : Fragment() {
 
@@ -17,6 +18,9 @@ class StartFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_start, container, false)
+
+        setUpTitleBar(view, "Пожертвования", isBackButVisible = false)
+
         val button = view.findViewById<FrameLayout>(R.id.button_create_donation)
         button.setOnClickListener {
             findNavController().navigate(StartFragmentDirections.actionStartToDonationType())

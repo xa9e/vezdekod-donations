@@ -8,6 +8,7 @@ import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import kz.nan.vkvezdekod.R
+import kz.nan.vkvezdekod.uitools.setUpTitleBar
 
 class DonationTypeFragment : Fragment() {
 
@@ -17,6 +18,8 @@ class DonationTypeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_donation_type, container, false)
+
+        setUpTitleBar(view, "Тип сбора", isBackButVisible = true)
 
         val buttonTargeted = view.findViewById<LinearLayout>(R.id.button_targeted)
         val buttonRegular = view.findViewById<LinearLayout>(R.id.button_regular)

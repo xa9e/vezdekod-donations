@@ -7,23 +7,9 @@
     android:orientation="vertical"
     tools:context=".screens.start.StartFragment">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="55dp">
+    <include layout="@layout/titlebar" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="Пожертвования"
-            style="@style/HeaderText" />
-    </RelativeLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:layout_marginHorizontal="15dp"
-        android:background="@color/colorDelimiter" />
+    <include layout="@layout/titlebar_separator" />
 
     <RelativeLayout
         android:layout_width="match_parent"
