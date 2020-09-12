@@ -10,11 +10,9 @@
 
     <include layout="@layout/titlebar" />
 
-    <FrameLayout
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="150dp">
-
-    </FrameLayout>
-
-
+        android:layout_height="150dp"
+        android:layerType="software"
+        android:src="@drawable/dotted" />
 </LinearLayout>
