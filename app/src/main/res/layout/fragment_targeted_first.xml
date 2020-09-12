@@ -30,7 +30,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:layerType="software"
-                    android:src="@drawable/dotted"/>
+                    android:src="@drawable/rect_blue_short_lines" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
