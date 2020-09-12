@@ -19,7 +19,7 @@ class StartFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_start, container, false)
 
-        setUpTitleBar(view, "Пожертвования", isBackButVisible = false)
+        setUpTitleBar(view, this, "Пожертвования", isBackButVisible = false)
 
         val button = view.findViewById<FrameLayout>(R.id.button_create_donation)
         button.setOnClickListener {

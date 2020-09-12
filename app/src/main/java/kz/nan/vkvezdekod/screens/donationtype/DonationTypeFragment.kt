@@ -19,7 +19,7 @@ class DonationTypeFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_donation_type, container, false)
 
-        setUpTitleBar(view, "Тип сбора", isBackButVisible = true)
+        setUpTitleBar(view, this, "Тип сбора", isBackButVisible = true)
 
         val buttonTargeted = view.findViewById<LinearLayout>(R.id.button_targeted)
         val buttonRegular = view.findViewById<LinearLayout>(R.id.button_regular)
