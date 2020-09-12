@@ -23,16 +23,22 @@
             android:orientation="vertical">
 
             <RelativeLayout
+                android:id="@+id/button_upload_photo"
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <ImageView
+                    android:id="@+id/image_view_1"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:layerType="software"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/rect_blue_short_lines" />
 
                 <LinearLayout
+                    android:id="@+id/linear_layout_under_image_view"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"

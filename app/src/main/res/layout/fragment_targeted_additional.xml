@@ -12,5 +12,29 @@
 
     <include layout="@layout/titlebar_separator" />
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="15dp">
+
+        <FrameLayout
+            android:id="@+id/button_next_ta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_round_corners">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="7dp"
+                android:text="Создать сбор"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+        </FrameLayout>
+    </RelativeLayout>
+
 
 </LinearLayout>
