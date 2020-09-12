@@ -12,15 +12,29 @@
         <action
             android:id="@+id/action_start_to_donation_type"
             app:destination="@id/donation_type_destination"
-            app:enterAnim="@anim/slide_right"
-            app:exitAnim="@anim/slide_left"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
             app:launchSingleTop="true"
-            app:popEnterAnim="@anim/slide_right"
-            app:popExitAnim="@anim/slide_left" />
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/donation_type_destination"
         android:name="kz.nan.vkvezdekod.screens.donationtype.DonationTypeFragment"
         android:label="fragment_donation_type"
-        tools:layout="@layout/fragment_donation_type" />
+        tools:layout="@layout/fragment_donation_type">
+        <action
+            android:id="@+id/action_donation_type_to_targeted_first"
+            app:destination="@id/targeted_first_destination"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/targeted_first_destination"
+        android:name="kz.nan.vkvezdekod.screens.targered.first.TargetedFirstFragment"
+        android:label="fragment_targeted_first"
+        tools:layout="@layout/fragment_targeted_first" />
 </navigation>
