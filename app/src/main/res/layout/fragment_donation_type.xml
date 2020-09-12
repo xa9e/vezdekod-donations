@@ -58,11 +58,13 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_arrow_back" />
+                    android:src="@drawable/ic_aim"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="14dp"/>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -70,7 +72,7 @@
                         android:layout_centerInParent="true"
                         android:layout_centerVertical="true"
                         android:orientation="vertical"
-                        android:padding="10dp">
+                        android:gravity="center_vertical">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -89,11 +91,13 @@
                     </LinearLayout>
                 </RelativeLayout>
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_arrow_back" />
-
+                    <ImageView
+                        android:layout_width="68dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginRight="14dp"
+                        android:src="@drawable/ic_gray_arrow_right" />
             </LinearLayout>
 
             <LinearLayout
@@ -107,7 +111,10 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_arrow_back" />
+                    android:src="@drawable/ic_calendar"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"/>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -119,7 +126,7 @@
                         android:layout_centerInParent="true"
                         android:layout_centerVertical="true"
                         android:orientation="vertical"
-                        android:padding="10dp">
+                        android:gravity="center_vertical">
 
                         <TextView
                             android:layout_width="match_parent"
