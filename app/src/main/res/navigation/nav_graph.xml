@@ -36,5 +36,40 @@
         android:id="@+id/targeted_first_destination"
         android:name="kz.nan.vkvezdekod.screens.targeted.first.TargetedFirstFragment"
         android:label="fragment_targeted_first"
-        tools:layout="@layout/fragment_targeted_first" />
+        tools:layout="@layout/fragment_targeted_first">
+        <action
+            android:id="@+id/action_targeted_first_to_targeted_additional"
+            app:destination="@id/targeted_additional_destination"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/targeted_additional_destination"
+        android:name="kz.nan.vkvezdekod.screens.targeted.additional.TargetedAdditionalFragment"
+        android:label="fragment_targeted_additional"
+        tools:layout="@layout/fragment_targeted_additional">
+        <argument
+            android:name="name_for_donation_edt1"
+            android:defaultValue="Добряши"
+            app:argType="string" />
+        <argument
+            android:name="sum_rubles_edt2"
+            android:defaultValue="10000"
+            app:argType="integer" />
+        <argument
+            android:name="goal_edt3"
+            android:defaultValue="Уход за животными"
+            app:argType="string" />
+        <argument
+            android:name="desc_edt4"
+            android:defaultValue="Привет-привет!"
+            app:argType="string" />
+        <argument
+            android:name="cc_edt5"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
 </navigation>
