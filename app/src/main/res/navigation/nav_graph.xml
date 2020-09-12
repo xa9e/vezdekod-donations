@@ -34,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/targeted_first_destination"
-        android:name="kz.nan.vkvezdekod.screens.targered.first.TargetedFirstFragment"
+        android:name="kz.nan.vkvezdekod.screens.targeted.first.TargetedFirstFragment"
         android:label="fragment_targeted_first"
         tools:layout="@layout/fragment_targeted_first" />
 </navigation>
