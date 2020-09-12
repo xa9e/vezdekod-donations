@@ -177,9 +177,9 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="77dp"
-        android:gravity="center"
-        android:paddingVertical="15dp">
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:paddingVertical="12dp">
 
         <FrameLayout
             android:id="@+id/button_next_ta"
