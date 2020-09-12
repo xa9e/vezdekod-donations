@@ -1,4 +1,4 @@
-package kz.nan.vkvezdekod.screens.targered.first
+package kz.nan.vkvezdekod.screens.targeted.first
 
 import android.os.Bundle
 import android.view.LayoutInflater
