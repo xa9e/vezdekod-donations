@@ -71,5 +71,23 @@
             android:name="cc_edt5"
             android:defaultValue="0"
             app:argType="integer" />
+        <argument
+            android:name="imageUri"
+            app:argType="android.net.Uri" />
+
+        <action
+            android:id="@+id/action_targeted_additional_to_posting"
+            app:destination="@id/posting_destination"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+
     </fragment>
+    <fragment
+        android:id="@+id/posting_destination"
+        android:name="kz.nan.vkvezdekod.screens.posting.PostingFragment"
+        android:label="fragement_posting"
+        tools:layout="@layout/fragment_posting" />
 </navigation>

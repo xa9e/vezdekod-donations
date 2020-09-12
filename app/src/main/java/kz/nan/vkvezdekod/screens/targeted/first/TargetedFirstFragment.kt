@@ -8,10 +8,7 @@ import android.provider.MediaStore
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.FrameLayout
-import android.widget.ImageView
-import android.widget.LinearLayout
-import android.widget.RelativeLayout
+import android.widget.*
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import kz.nan.vkvezdekod.R
@@ -43,9 +40,20 @@ class TargetedFirstFragment : Fragment() {
 
         val buttonNext = view.findViewById<FrameLayout>(R.id.button_next_tf)
         buttonNext.setOnClickListener {
+
+            if (imageURI == null) {
+                Toast.makeText(activity, "Please choose an image.", Toast.LENGTH_LONG).show()
+                return@setOnClickListener
+            }
+
             val action =
                 TargetedFirstFragmentDirections.actionTargetedFirstToTargetedAdditional(
-                    //nameForDonationEdt1 = view.findViewById<EditText>()
+                    nameForDonationEdt1 = view.findViewById<EditText>(R.id.edit_text_1_name_fo_the_donation).text.toString(),
+                    sumRublesEdt2 = view.findViewById<EditText>(R.id.edit_text_2_rubles).text.toString()
+                        .toIntOrNull() ?: 10000,
+                    goalEdt3 = view.findViewById<EditText>(R.id.edit_text_3_goal).text.toString(),
+                    descEdt4 = view.findViewById<EditText>(R.id.edit_text_4_desc).text.toString(),
+                    imageUri = imageURI!!
                 )
             findNavController().navigate(action)
         }

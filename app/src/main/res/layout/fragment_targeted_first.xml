@@ -72,6 +72,7 @@
 
 
                 <EditText
+                    android:id="@+id/edit_text_1_name_fo_the_donation"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="12dp"
@@ -93,6 +94,7 @@
 
 
                 <EditText
+                    android:id="@+id/edit_text_2_rubles"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="12dp"
@@ -114,6 +116,7 @@
 
 
                 <EditText
+                    android:id="@+id/edit_text_3_goal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="12dp"
@@ -135,6 +138,7 @@
 
 
                 <EditText
+                    android:id="@+id/edit_text_4_desc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="12dp"
